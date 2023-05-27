@@ -17,14 +17,14 @@ const Preevent = () => {
           </tr>
 
           {Preeventitems.map(res => (
-            <tr>
+            <tr key={res.id} >
               <td colSpan={2} className='tdimage pt-5 pb-5 ps-4 '>
                 <div className='daytext'>Day {res.day}</div>
               </td>
               <td className='list p-5' colSpan={3}>
                 <ul>
                   {res.event.map(res=>(
-                    <li>
+                    <li key={res.id}>
                      {res.id}. {res.title}
                     </li>
                   ))}

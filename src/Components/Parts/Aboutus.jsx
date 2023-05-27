@@ -16,9 +16,9 @@ const Aboutusblock = () => {
                 <div className='aboutques w-4/5 grid grid-cols-12 gap-4'>
                     <div className="col-start-1 sm:col-end-9 col-end-12">
                         {Aboutusitems.map(res => (
-                            <>
+                            <div key={res.id}>
                                 <h2 className='text'>{res.title}</h2>
-                                <div >{res.discription}</div></>
+                                <div >{res.discription}</div></div>
                         ))}
                     </div>
                     <div className="">

@@ -10,7 +10,7 @@ const Themes = () => {
         <div className="w-11/12 grid grid-cols-12 gap-4  ml-auto mr-auto">
           
          {Themeitems.map(res=>(
-           <div className="lg:col-span-4 md:col-span-4  ss:col-span-6 col-span-12 p-4">
+           <div className="lg:col-span-4 md:col-span-4  ss:col-span-6 col-span-12 p-4" key={res.id}>
            <div className="card">
              <div className="rectangle">
                <div className="cardtop">

@@ -17,7 +17,7 @@ const Sponser = () => {
       <h2 className='text-center text-4xl font-bold py-10'>Platinum Sponsers</h2>
       <div className="sponsers flex flex-wrap text-center justify-center">
         {Platinum.map((res) => (
-          <div className='sponsercontainer'>
+          <div className='sponsercontainer' key={res.id}>
             <img src={res.logo} alt="Companylogo" />
           </div>
         ))}
@@ -25,7 +25,7 @@ const Sponser = () => {
       <h2 className='text-center text-4xl font-bold py-10'>Golden Sponsers</h2>
       <div className="sponsers flex flex-wrap text-center justify-center">
         {Golden.map((res) => (
-          <div className='sponsercontainer'>
+          <div className='sponsercontainer' key={res.id}>
             <img src={res.logo} alt="Companylogo" />
           </div>
         ))}
@@ -33,7 +33,7 @@ const Sponser = () => {
       <h2 className='text-center text-4xl font-bold py-10'>Silver Sponser</h2>
       <div className="sponsers  flex flex-wrap text-center justify-center">
         {Silver.map((res) => (
-          <div className='sponsercontainer'>
+          <div className='sponsercontainer' key={res.id}>
           <img src={res.logo} alt="Companylogo" />
         </div>
         ))}

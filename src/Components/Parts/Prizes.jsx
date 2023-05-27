@@ -6,7 +6,7 @@ const Prizes = () => {
       <h1 className='text-center text-4xl font-bold py-10'>Prizes</h1>
       <div className="w-11/12 grid grid-cols-12 gap-4 place-content-center ml-auto mr-auto">
         {Prizeitems.map(res => (
-          <div className="lg:col-span-4 md:col-span-4  ss:col-span-6 col-span-12  p-4">
+          <div className="lg:col-span-4 md:col-span-4  ss:col-span-6 col-span-12  p-4" key={res.id}>
             <div className="card">
               <div className="rectangle">
                 <div className="cardtop">

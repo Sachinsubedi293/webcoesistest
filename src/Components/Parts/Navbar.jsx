@@ -24,7 +24,8 @@ const Navbarmain=()=> {
             variant="small"
             color="blue-gray"
             className="p-1 font-normal"
-          >
+            key={res.id}
+            >
             <Link to="/" className="flex items-center">
               {res.title}
             </Link>

@@ -38,7 +38,9 @@ const Footer = () => {
                             color="blue-gray"
                             className="p-1 font-normal"
                         >
-                            <Link to="/" className="flex items-center">
+                            <Link to="/" className="flex items-center"
+                            key={res.id}
+                            >
                                 {res.title}
                             </Link>
                         </Typography>
