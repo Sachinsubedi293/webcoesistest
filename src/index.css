@@ -1,0 +1,542 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+  font-family: Baloo 2;
+  src: url(https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&display=swap);
+}
+
+:root {
+  --primary: #7B3193 !important;
+  --mgprimary: #9A59A4 !important;
+  --bglight: #D9B8D7 !important;
+  --primaryaccent: #F26522 !important;
+  --primarydark: #2C0B39 !important;
+  --primarylight: #EFF0F1 !important;
+}
+
+* {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-family: 'Baloo 2', cursive;
+  font-size: 48px;
+  font-weight: bold;
+}
+
+h2 {
+  font-family: 'Baloo 2', cursive;
+  font-size: 36px;
+  font-weight: bolder;
+}
+
+h3 {
+  font-family: 'Baloo 2', cursive;
+  font-size: 24px;
+  font-weight: bolder;
+}
+
+h4 {
+  font-family: 'SourceSansPro-SemiBold', sans-serif;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+h5 {
+  font-family: 'SourceSansPro-SemiBold', sans-serif;
+  font-size: 16px;
+  font-weight: bolder;
+}
+
+.home {
+  background: var(--primarydark);
+  background-image: url(./Assests/image2.svg);
+  align-items: center;
+  min-height: 100vh;
+  justify-content: space-between;
+}
+
+.home .date {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  color: var(--primarylight);
+  margin-top: 10vh;
+  margin-bottom: 0vh;
+}
+
+.home .logo {
+  width: 400px;
+  height: 200px;
+  margin-top: -4vh;
+
+
+}
+
+.home .solgan {
+  font-family: 'Baloo 2', cursive;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 51px;
+  color: #FFFFFF;
+  text-align: center;
+  margin-top: -4vh;
+}
+
+.home .discription {
+  text-align: justify;
+  text-align: center;
+  color: var(--primarylight);
+  width: 60vw;
+  margin-bottom: 4vh;
+}
+
+.home .join {
+  width: 258px;
+  height: 76.54px;
+  align-items: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+}
+
+.home .join span {
+  position: absolute;
+  font-family: 'Baloo 2', cursive;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 38px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #EEEDEE;
+
+  text-shadow: 0px 4px 4px rgba(238, 237, 238, 0.26);
+
+}
+
+.rocketsmoke {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.rocket {
+  position: absolute;
+  bottom: 23%;
+}
+
+.smoke {
+  margin-top: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+.smoke .smokeimg {
+  width: 100vw;
+  height: 164px;
+  background-position: center;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.home .rocketsmoke .organizertext {
+  position: absolute;
+  font-family: 'Baloo 2', cursive;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  margin-top: 50px;
+  color: var(--primarydark);
+}
+
+@media only screen and (max-width: 500px) {
+  .home .logo {
+    width: 100vw;
+  }
+
+  .rocket {
+    bottom: 21%;
+  }
+
+  .rocket img {
+    height: 300px;
+    object-fit: cover;
+  }
+}
+
+/* Homepage */
+
+.homepage {
+  background-image: url(./Assests/image2.svg);
+  background-color: var(--primarydark);
+  color: #FFFFFF;
+}
+
+.landing {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px;
+}
+
+.landing .date {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+
+  color: #EFF0F1;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.landing .intro {
+  font-family: 'Varela Round';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+
+  color: #FFFFFF;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  max-width: 50vw;
+  margin: 48px 0px;
+}
+
+.landing .button {
+  order: 3;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 24px;
+  gap: 16px;
+  width: 240px;
+  height: 60px;
+  background: #F26522;
+  box-shadow: 0px 3px 15px rgba(217, 184, 216, 0.1);
+  border-radius: 15px;
+  overflow-x: visible !important;
+}
+
+.landing span {
+  font-family: 'Baloo 2', cursive;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 38px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #EEEDEE;
+
+  text-shadow: 0px 3px 3px rgba(238, 237, 238, 0.26);
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.about .datas {
+  background-image: url(./Assests/Rectangle.svg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-clip: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: -10px;
+}
+
+.about .datas .title {
+  font-family: 'Baloo 2', cursive;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 77px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+
+  color: #7B3193;
+
+  text-shadow: 2px 2px 0px #EEEDEE;
+}
+
+.about .text {
+  line-height: 77px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+
+  color: #7B3193;
+
+  text-shadow: 2px 2px 0px #EEEDEE;
+}
+
+
+/* Test */
+.blue {
+  position: absolute;
+  bottom: 15%;
+  font-family: 'Baloo 2', cursive;
+  font-size: 36px;
+  font-weight: bolder;
+  color: var(--primarydark) !important;
+  z-index: 3;
+}
+
+.prizetext {
+  position: absolute;
+  bottom: 10%;
+  font-family: 'Baloo 2', cursive;
+  font-weight: bolder;
+  z-index: 3;
+}
+
+.card {
+  height: 395px;
+  border-radius: 24.2102px;
+  width: auto;
+  filter: drop-shadow(0px 0px 2px #E4E4E6);
+
+}
+
+.card .rectangle {
+  height: 395px;
+
+  background: #E4E4E6;
+  box-shadow: 4.84205px 4.84205px 3.87364px rgba(0, 0, 0, 0.25);
+  border-radius: 24.2102px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card .rectangle .cardtop {
+  position: absolute;
+  width: 100%;
+  height: 290px;
+  background: url(./Assests/cardtop.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-origin: border-box;
+
+  border-radius: 24.2102px;
+}
+
+.card .circle {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  height: 80px;
+  width: 80px;
+  background: #2A0A37;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.card .icon {
+  height: 70px;
+  width: 70px;
+  background: #2A0A37;
+  position: absolute;
+  z-index: 2;
+}
+
+.circleav {
+  position: absolute;
+  z-index: 2;
+  top: 20%;
+  height: 200px;
+  width: 200px;
+  background: #2A0A37;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.sponsercontainer {
+  width: 300px;
+  height: 300px;
+  margin-top: 50px;
+}
+
+.tdimage {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  table-layout: auto;
+  background-image: url(./Assests/day.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin-top: 10px;
+}
+
+.tdimage .daytext {
+
+
+  font-family: 'Baloo 2';
+  font-style: normal;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+
+  color: #7B3193;
+  text-shadow: 2px 2px 0px rgba(238, 237, 238, 0.6);
+}
+
+.list {
+  border-left: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+
+.questioncontainer {
+  background: #D9B8D8;
+  box-shadow: 3.75px 3.75px 3px rgba(0, 0, 0, 0.25);
+  border-radius: 18.75px;
+  padding: 10px;
+}
+.containerq{
+  padding: 10px;
+  width: 50%;
+}
+.containerq h2{
+  font-family: 'Source Sans Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 30px;
+text-align: center;
+letter-spacing: 0.02em;
+
+color: #7B3293;
+
+}
+.footer{
+  background-color: #EEEDEE;
+  margin-top: -1px;
+
+  backface-visibility: visible;
+  background-origin: border-box;
+}
+.logofoot{
+  display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+}
+.containerfoot{
+  color: #7B3293;
+}
+.footerslogan{
+  font-family: 'Baloo 2';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 51px;
+text-align: center;
+
+color: #7B3293;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+.gmail{
+  font-family: 'Source Sans Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 30px;
+text-align: center;
+
+color: #7B3293;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 2;
+flex-grow: 0;
+}
+.phone{
+  font-family: 'Source Sans Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 30px;
+text-align: center;
+
+color: #7B3293;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 3;
+flex-grow: 0;
+}
+.containerfoot img{
+  padding: 2px 5px;
+}
+.resp{
+  justify-content: center;
+}
+.text{
+  overflow-x: visible !important;
+}
